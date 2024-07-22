@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}
+<title>signup</title>
+{% endblock title %}
+
+{% block content %}
+<form action="index.html" class="login">
+  
+<div class="login-content">
+  <label for="name" class="login-label">name</label> <br>
+  <input class="login-textbox" type="text" name="name" id="name" value="" placeholder="enter your full name"/>
+  <br>
+  <label for="email address" class="login-label">email address</label> <br>
+  <input class="login-textbox" type="email" name="email" id="email" value=" " placeholder="enter email address"/>
+  <br>
+  <label for="password" class="login-label">password</label>
+  <br>
+  <input class="login-textbox" type="password" name="password" id="password" value="" placeholder="enter password"/>
+  <br>
+  <label for="password" class="login-label">confirm password</label>
+  <br>
+  <input class="login-textbox" type="password" name="password" id="password" value="" placeholder="confirm password"/>
+  <br>
+  <input type="submit" class="btn btn-db" value="Sign up">
+  <br>
+  
+</div>
+
+
+</form>
+
+{% endblock content %}
