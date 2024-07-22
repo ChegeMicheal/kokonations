@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}
+<title>homepage</title>
+{% endblock title %}
+
+{% block content %}
+  
+
+<!-- page wrapper -->
+<div class="page-wrapper">
+  
+  <!-- carousel -->
+  <div class="post-slider">
+    <h3 class="slider-title one">messages</h3>
+    <br>
+    {% for contact in contacts %}
+    <p>{{ contact.id }}</p>
+    {% endfor %}
+ </div>
+ </div>
+ {% endblock content %}

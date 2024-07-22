@@ -1,5 +1,5 @@
 from flask import Blueprint, Flask, render_template, request, flash, redirect, url_for
-from .models import Member
+from .models import Contact,Member
 import os
 from werkzeug.utils import secure_filename
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -154,3 +154,22 @@ def upload_image():
             
 
     return render_template('upload_image.html', user=current_user)
+
+
+@auth.route('/send_messages', methods=['GET', 'POST'])
+def send_messages():
+    if request.method == 'POST':
+        email = request.form.get('email')
+        message = request.form.get('message')
+        #add user to database
+        new_message = Contact(email = email, message=message)
+        db.session.add(new_message)
+        db.session.commit()
+        flash('account created successfully!', category='success')
+    return render_template('homepage.html', user=current_user)
+
+
+@auth.route('/view_messages', methods=['GET', 'POST'])
+def view_messages():
+    contact = Contact.query.all()
+    return render_template('messages.html', contact=contact,  user=current_user)
