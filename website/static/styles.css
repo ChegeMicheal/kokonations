@@ -23,23 +23,22 @@ a{
 
 .btn-big{
   padding: .7rem 1.3rem;
-  line-height: 1.3rem;
+  line-height: 1.0rem;
   color: white;
 }
 
 .btn-db{
   padding: .7rem 1.3rem;
-  line-height: 1.3rem;
-  color: white;
-  background: sandybrown;
-  color: white;
+  line-height: 1.0rem;
+  background: gray;
+  color: black;
   border: none;
   border-radius: 10px;
-  font-size: 1.3em;
+  font-size: 1.0em;
 }
 
 .btn-db:hover{
-  background: saddlebrown;
+  background: blue;
   color: white;
   cursor: pointer;
 }
@@ -52,13 +51,13 @@ a{
   text-align: center;
   line-height: 1rem;
   padding: .7rem 1.3rem;
-  border: 1px solid burlywood;
+  border: 1px solid black;
   border-radius: 5px;
 }
 
 .btn-dsb:hover{
-  background: sandybrown;
-  color: white;
+  background: gray;
+  color: black;
 }
 
 header{
@@ -445,6 +444,8 @@ header .menu-toggle{
 }
 
 .login{
+  align-self: center;
+  width: 400px;
   height: auto;
   padding: 10px;
   padding-top: 70px;
@@ -458,8 +459,10 @@ header .menu-toggle{
   width: 90%;
   margin: 10px 5%;
   height: auto;
-  background: wheat;
+  background: white;
+  color: black;
   border-radius: 10px;
+  border: .3px solid black;
   text-align: center;
   font-size: 1.2em;
   line-height: 1.3rem;
@@ -476,8 +479,8 @@ header .menu-toggle{
   width: 90%;
   line-height: 2rem;
   font-size: 1.1em;
-  border: none;
-  border-color: white;
+  border: .2px solid black;
+  border-color: black;
   border-radius: 4px;
 }
 
@@ -658,4 +661,8 @@ header .menu-toggle{
   flex-direction: column;
   height: auto;
 }
+.login{
+  width: auto;
+}
+
 }

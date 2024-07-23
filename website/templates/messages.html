@@ -29,19 +29,19 @@
           <th>message</th>
           <th>date submitted</th>
         </tr>
-        
-        <tr>
-          <td>hello</td>
-          <td>hello1</td>
-          <td>hello</td>
-          <td>hello1</td>
-        </tr>
+
         <tr>
           {% for contact in user.contacts %}
+         <td>{{ contact.id }}</td> 
          <td>{{ contact.email }}</td> 
+         <td>{{ contact.message }}</td> 
+         <td>{{ contact.date_submitted }}</td> 
          {% endfor %}
         </tr>
       </table>
+      {% for my_user in my_users %}
+      {{ my_user.email }}
+      {% endfor%}
     </div>
 
  </div>

@@ -1,5 +1,5 @@
 from flask import Blueprint, Flask, render_template, request, flash, redirect, url_for
-from .models import Contact,Member
+from .models import Contact,User
 import os
 from werkzeug.utils import secure_filename
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -15,12 +15,12 @@ def login():
         email = request.form.get('email')
         password = request.form.get('password')
         
-        user = Member.query.filter_by(email = email).first()
+        user = User.query.filter_by(email = email).first()
         if user:
             if check_password_hash(user.password,password):
                 flash('logged in successfully', category= 'success')
                 login_user(user, remember=True)
-                return redirect(url_for('views.home'))
+                return redirect(url_for('views.homepage'))
             else:
                 flash('incorrect password, try again', category = 'error')
                 
@@ -33,33 +33,31 @@ def logout():
     logout_user()
     return redirect(url_for('auth.homepage'))
 
-@auth.route('/signUp', methods=['GET', 'POST'])
+@auth.route('/sign_up', methods=['GET', 'POST'])
 def sign_up():
     if request.method == 'POST':
         email = request.form.get('email')
-        fullName = request.form.get('fullName')
+        fullName = request.form.get('fullname')
         password1 = request.form.get('password1')
         password2 = request.form.get('password2')
         
-        user = Member.query.filter_by(email=email).first()
+        user = User.query.filter_by(email=email).first()
         if user:
             flash('email already exists', category = 'error')
         elif len(email) < 4:
             flash('Email must be greater than 4 characters.', category='error')
-        elif len(fullName) < 2:
-            flash('firstname must be greater than 1 character.', category='error')
         elif password1 != password2:
             flash('password mismatch', category='error')
         elif len(password1) < 7:
             flash('password must be atleast 7 characters.', category='error')
         else:
             #add user to database
-            new_user = Member(email = email, fullName=fullName, password = generate_password_hash(password1))
+            new_user = User(email = email, fullName=fullName, password = generate_password_hash(password1))
             db.session.add(new_user)
             db.session.commit()
             flash('account created successfully!', category='success')
             login_user(user=current_user, remember = True)
-            return redirect(url_for('views.home'))
+            return redirect(url_for('views.homepage'))
         
     return render_template("signUp.html", user = current_user)
 
@@ -85,7 +83,7 @@ def loan():
 @auth.route('/home', methods=['GET', 'POST'])
 @login_required
 def home():
-    member= Member.query.all()
+    user = User.query.all()
     return render_template('home.html', user=current_user)
 
 @auth.route('/cars', methods=['GET', 'POST'])
@@ -173,5 +171,18 @@ def send_messages():
 
 @auth.route('/view_messages', methods=['GET', 'POST'])
 def view_messages():
-    contact= "MichaelMbogo"
-    return render_template('messages.html', contact=contact,  user=current_user)
+    my_user = User.query.all()
+    return render_template('messages.html', my_user=my_user, user=current_user)
+
+
+#create custom error pages
+
+#invalid url
+@auth.errorhandler(404)
+def page_not_found(e):
+    return render_template("404.html"),404
+
+#internal server error
+@auth.errorhandler(500)
+def server_error(e):
+    return render_template("500.html"),500

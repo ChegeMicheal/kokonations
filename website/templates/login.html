@@ -5,12 +5,12 @@
 {% endblock title %}
 
 {% block content %}
-<form action="index.html" class="login">
+<form action="/login" class="login" method="post">
   
 <div class="login-content">
   <label for="email address" class="login-label">email address</label> <br>
-  <input class="login-textbox" type="email" name="eamil" id="email" value=" " placeholder="enter email address"/>
-  <br>
+  <input class="login-textbox" type="email" name="email" id="email" value=" " placeholder="enter email address"/>
+  <br> <br>
   <label for="password" class="login-label">password</label>
   <br>
   <input class="login-textbox" type="password" name="password" id="password" value="" placeholder="enter password"/>

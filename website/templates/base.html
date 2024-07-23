@@ -43,49 +43,6 @@
     </div>
     <i class="fa fa-bars menu-toggle"></i>
     <ul class="nav">
-
-      {% if user.is_authenticated %}
-      <li class="Dropdown">
-        <a href="#">
-          <i class="fa fa-user"></i>
-          Membership
-          <i class="fa fa-chevron-down" style="font-size: .8em;"></i>
-          </a>
-              <ul class="dropdown">
-   <li><a href="#" class="dshboard">Dashboard</a
-              >
-              <ul class="board">
-                <li>
-                  <div class="dashboard">
-                    
-                      <div class="dashboard-content">
-                        
-                        <div class="dashboard-section">
-                          <input type="submit" class="btn btn-dsb" name="deposit" id="deposit" value="deposit">
-                        
-                          <input type="submit" class="btn btn-dsb" name="withdraw" id="withdraw" value="withdraw">
-                          
-                    
-                          <input type="submit" class="btn btn-dsb" name="loan-limit" id="loan-limit" value="Loan Limit">
-                          </div>
-                          
-                        <div class="dashboard-section borrow">
-                          <input type="submit" class="btn btn-dsb" name="borrow" id="borrow" value="Borrow">
-                          </div>
-                          
-                           <div class="dashboard-section borrow">
-                          <input type="submit" class="btn btn-dsb" name="borrow" id="borrow" value="Borrow">
-                          </div>
-                          
-                    </div>
-                  </div>
-                </li>
-
-           </ul>  
-           </li> 
-              <li><a href="/login"class="logout">logout</a></a></li>
-      {% else %}  
-      
       
             <li class="Dropdown">
         <a href="#services"><i class="fa fa-wrench" aria-hidden="true"></i> 
@@ -107,7 +64,7 @@
       </li>
       <li><a href="/homepage"><i class="fa-solid fa-house"></i> home</a></li>  
     </ul>
-    {% endif %}
+
   </header>
   
 
