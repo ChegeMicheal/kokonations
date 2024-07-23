@@ -148,6 +148,7 @@ def upload_image():
             else:
                 filename=secure_filename(image.filename)
                 image.save(os.path.join(app.config["IMAGE_UPLOADS"],filename))
+                flash('image uploaded successfully!')
                 print("image saved!")
             
             return redirect(request.url)
