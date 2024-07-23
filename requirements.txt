@@ -11,6 +11,9 @@ gunicorn==22.0.0
 itsdangerous==2.2.0
 Jinja2==3.1.4
 MarkupSafe==2.1.5
+mysql-connector==2.2.9
+mysql-connector-python==9.0.0
+mysql-connector-python-rf==2.2.2
 packaging==24.1
 psycopg2==2.9.9
 pycparser==2.22

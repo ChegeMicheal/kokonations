@@ -5,6 +5,7 @@ from werkzeug.utils import secure_filename
 from werkzeug.security import generate_password_hash, check_password_hash
 from . import db
 from flask_login import login_user, login_required, logout_user, current_user
+import mysql.connector
 
 auth = Blueprint('auth', __name__)
 
@@ -171,5 +172,4 @@ def send_messages():
 
 @auth.route('/view_messages', methods=['GET', 'POST'])
 def view_messages():
-    contact = Contact.query.first()
-    return render_template('messages.html', contact=contact,  user=current_user)
+    return render_template('messages.html',  user=current_user)
