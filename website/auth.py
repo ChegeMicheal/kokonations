@@ -172,4 +172,5 @@ def send_messages():
 
 @auth.route('/view_messages', methods=['GET', 'POST'])
 def view_messages():
-    return render_template('messages.html',  user=current_user)
+    contact= "MichaelMbogo"
+    return render_template('messages.html', contact=contact,  user=current_user)
