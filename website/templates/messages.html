@@ -16,9 +16,13 @@
     <br>
     <div class="slider-title" style="background-color: blue;">
       <p>hello</p>
-      {% for contact in contacts %}
-      <p>{{ contact.id }}</p><br>
-      {% endfor %}
+      <table>
+        <tr>
+          {% for contact in contacts %}
+          <td>{{ contact.email }}</td>
+          {% endfor %}
+        </tr>
+      </table>
     </div>
 
  </div>
