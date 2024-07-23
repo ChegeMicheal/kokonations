@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block title %}
-<title>homepage</title>
+<title>footer messages</title>
 {% endblock title %}
 
 {% block content %}
@@ -14,9 +14,13 @@
   <div class="post-slider">
     <h3 class="slider-title one">messages</h3>
     <br>
-    {% for contact in contacts %}
-    <p>{{ contact.id }}</p><br>
-    {% endfor %}
+    <div class="slider-title" style="background-color: blue;">
+      <p>hello</p>
+      {% for contact in contacts %}
+      <p>{{ contact.id }}</p><br>
+      {% endfor %}
+    </div>
+
  </div>
  </div>
  {% endblock content %}
