@@ -169,28 +169,9 @@ def send_messages():
         db.session.add(new_message)
         db.session.commit()
         flash('message submitted!', category='success')
-        return redirect(request.url)
+        
+    return render_template("homepage.html")
     
-    def getData():
-        mydb = mysql.connector.connect(
-             host="localhost",
-             user="root",
-             passwd="MYSQLpassword24",
-             database="user"
-            )
-        
-        mycursor = mydb.cursor()
-        
-        
-        mycursor.execute("SELECT * FROM footer_message") 
-        DBData = mycursor.fetchall() 
-        print(DBData)
-        mycursor.close()
-        return DBData
-         
-    DBData = getData()
-    
-    return render_template('messages.html', footer_message=DBData)
 
 
 @auth.route('/view_messages', methods=['GET', 'POST'])
