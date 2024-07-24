@@ -198,10 +198,10 @@ def view_messages():
     
     def getData():
         mydb = mysql.connector.connect(
-             host="localhost",
-             user="root",
-             passwd="MYSQLpassword24",
-             database="user"
+             host="d1kb8x1fu8rhcnej.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+             user="mgewt9r4y3xqrzx9",
+             passwd="tic4d2e6fe79vw98",
+             database="c60lhk7e30osyo5v"
             )
         
         mycursor = mydb.cursor()
