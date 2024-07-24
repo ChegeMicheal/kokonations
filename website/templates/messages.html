@@ -24,23 +24,24 @@
     <div >
       <table class="table table-striped">
         <tr>
-          <th>id</th>
-          <th>email</th>
-          <th>message</th>
-          <th>date submitted</th>
+          <th>ID</th>
+          <th>EMAIL</th>
+          <th>MESSAGE</th>
+          <th>DATE SUBMITTED</th>
         </tr>
 
+          {% for i in range(50)  %}
         <tr>
-          {% for contact in user.contacts %}
-         <td>{{ contact.id }}</td> 
-         <td>{{ contact.email }}</td> 
-         <td>{{ contact.message }}</td> 
-         <td>{{ contact.date_submitted }}</td> 
-         {% endfor %}
+         <td>{{ footer_message.id }}</td> 
+         <td>{{ footer_message.email }}</td> 
+         <td>{{ footer_message.message }}</td> 
+         <td>{{ footer_message.date_submitted }}</td> 
         </tr>
+         {% endfor %}
+        
       </table>
-      {% for my_user in my_users %}
-      {{ my_user.email }}
+      {% for footer_message in footer_messages %}
+      {{ footer_message.email }}
       {% endfor%}
     </div>
 

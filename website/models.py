@@ -15,11 +15,10 @@ class User(db.Model, UserMixin):
         return '<Name %r>' % self.name
     
 
-class Contact(db.Model,UserMixin):
+class Footer_message(db.Model):
     id= db.Column(db.Integer, primary_key = True)
     email = db.Column(db.String(150), nullable=False)
     message = db.Column(db.String(150), nullable=False)
-    date_submitted = db.Column(db.Date(), default=datetime.utcnow)
-    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+    date_submitted = db.Column(db.DateTime, default=datetime.utcnow)
     
 

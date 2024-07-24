@@ -1,5 +1,5 @@
 from flask import Blueprint, Flask, render_template, request, flash, redirect, url_for
-from .models import Contact,User
+from .models import Footer_message,User
 import os
 from werkzeug.utils import secure_filename
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -162,17 +162,20 @@ def send_messages():
         email = request.form.get('email')
         message = request.form.get('message')
         #add user to database
-        new_message = Contact(email = email, message=message)
+        new_message = Footer_message(email = email, message=message)
         db.session.add(new_message)
         db.session.commit()
-        flash('account created successfully!', category='success')
-    return render_template('homepage.html', user=current_user)
+        flash('message submitted!', category='success')
+        return redirect(request.url)
+    
+    return render_template('messages.html', user=current_user)
 
 
 @auth.route('/view_messages', methods=['GET', 'POST'])
 def view_messages():
-    my_user = User.query.all()
-    return render_template('messages.html', my_user=my_user, user=current_user)
+    footer_message = Footer_message.query.first()
+    print(footer_message)
+    return render_template('messages.html', footer_message=footer_message)
 
 
 #create custom error pages
