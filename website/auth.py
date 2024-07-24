@@ -7,6 +7,9 @@ from . import db
 from flask_login import login_user, login_required, logout_user, current_user
 import mysql.connector
 
+from flask_mysqldb import MySQL
+
+
 auth = Blueprint('auth', __name__)
 
 @auth.route('/login', methods=['GET', 'POST'])
@@ -168,14 +171,54 @@ def send_messages():
         flash('message submitted!', category='success')
         return redirect(request.url)
     
-    return render_template('messages.html', user=current_user)
+    def getData():
+        mydb = mysql.connector.connect(
+             host="localhost",
+             user="root",
+             passwd="MYSQLpassword24",
+             database="user"
+            )
+        
+        mycursor = mydb.cursor()
+        
+        
+        mycursor.execute("SELECT * FROM footer_message") 
+        DBData = mycursor.fetchall() 
+        print(DBData)
+        mycursor.close()
+        return DBData
+         
+    DBData = getData()
+    
+    return render_template('messages.html', footer_message=DBData)
 
 
 @auth.route('/view_messages', methods=['GET', 'POST'])
 def view_messages():
-    footer_message = Footer_message.query.first()
-    print(footer_message)
-    return render_template('messages.html', footer_message=footer_message)
+    
+    def getData():
+        mydb = mysql.connector.connect(
+             host="localhost",
+             user="root",
+             passwd="MYSQLpassword24",
+             database="user"
+            )
+        
+        mycursor = mydb.cursor()
+        
+        
+        mycursor.execute("SELECT * FROM footer_message") 
+        DBData = mycursor.fetchall() 
+        print(DBData)
+        mycursor.close()
+        return DBData
+         
+    DBData = getData()
+    return render_template("messages.html", footer_message=DBData)
+
+    #footer_message = Footer_message.query.all()
+    #print(footer_message)
+    #return render_template('messages.html', footer_message=footer_message)
 
 
 #create custom error pages
