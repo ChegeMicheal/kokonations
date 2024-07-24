@@ -18,7 +18,7 @@ class User(db.Model, UserMixin):
 class Footer_message(db.Model):
     id= db.Column(db.Integer, primary_key = True)
     email = db.Column(db.String(150), nullable=False)
-    message = db.Column(db.String(1000), nullable=False)
+    message = db.Column(db.String(10000), nullable=False)
     date_submitted = db.Column(db.DateTime, default=datetime.utcnow)
     
 
