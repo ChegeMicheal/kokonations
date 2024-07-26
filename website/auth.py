@@ -164,8 +164,9 @@ def send_messages():
     if request.method == 'POST':
         email = request.form.get('email')
         message = request.form.get('message')
+        visibility = request.form.get('visibility')
         #add user to database
-        new_message = Footer_message(email = email, message=message)
+        new_message = Footer_message(email = email, message=message, visibility=visibility)
         db.session.add(new_message)
         db.session.commit()
         flash('message submitted!', category='success')
@@ -186,9 +187,8 @@ def view_messages():
             )
         
         mycursor = mydb.cursor()
-        
-        
-        mycursor.execute("SELECT * FROM footer_message") 
+
+        mycursor.execute("SELECT * FROM footer_message WHERE visibility='public'") 
         DBData = mycursor.fetchall() 
         print(DBData)
         mycursor.close()

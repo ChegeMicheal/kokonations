@@ -27,6 +27,7 @@
           <th>ID</th>
           <th>EMAIL</th>
           <th>MESSAGE</th>
+          <th>VISIBILITY</th>
           <th>DATE SUBMITTED</th>
         </tr>
 
@@ -41,19 +42,7 @@
          {% endfor %}
         
 
-          {% for footer_message in footer_messages  %}
-        <tr>
-         <td>{{ footer_message.id }}</td> 
-         <td>{{ footer_message.email }}</td> 
-         <td>{{ footer_message.message }}</td> 
-         <td>{{ footer_message.date_submitted }}</td> 
-        </tr>
-         {% endfor %}
-        
       </table>
-      {% for footer_message in footer_messages %}
-      {{ footer_message.email }}
-      {% endfor%}
     </div>
 
  </div>
