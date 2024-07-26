@@ -197,6 +197,28 @@ def view_messages():
     DBData = getData()
     return render_template("messages.html", footer_message=DBData)
 
+@auth.route('/view_private_messages', methods=['GET', 'POST'])
+def view_private_messages():
+    
+    def getData():
+        mydb = mysql.connector.connect(
+             host="d1kb8x1fu8rhcnej.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+             user="mgewt9r4y3xqrzx9",
+             passwd="tic4d2e6fe79vw98",
+             database="c60lhk7e30osyo5v"
+            )
+        
+        mycursor = mydb.cursor()
+
+        mycursor.execute("SELECT * FROM footer_message WHERE visibility='private'") 
+        DBData = mycursor.fetchall() 
+        print(DBData)
+        mycursor.close()
+        return DBData
+         
+    DBData = getData()
+    return render_template("private_messages.html", footer_message=DBData)
+
     #footer_message = Footer_message.query.all()
     #print(footer_message)
     #return render_template('messages.html', footer_message=footer_message)
