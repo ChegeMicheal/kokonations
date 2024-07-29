@@ -377,8 +377,8 @@ header .menu-toggle{
 
 .footer .footer-content .about .socials a{
   background: white;
-  width: 30px;
-  height: 30px;
+  width: auto;
+  height: auto;
   margin-right: 5px;
   text-align: center;
   display: inline-block;
