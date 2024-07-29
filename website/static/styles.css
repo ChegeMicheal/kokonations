@@ -360,7 +360,7 @@ header .menu-toggle{
   float: left;
 }
 
-.footer .footer-content h1, .footer .footer-content h4{
+.footer .footer-content h1, .footer .footer-content h3, .footer .footer-content h4{
   color: white;
   font-weight: bold;
 }
