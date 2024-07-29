@@ -519,6 +519,7 @@ header .menu-toggle{
 }
 
 .content ul li{
+  font-weight: bold;
   padding: 5px;
   list-style-type: square;
   text-decoration: none;
@@ -531,7 +532,7 @@ header .menu-toggle{
   margin: 5px;
   padding: 10px;
   left: 30px;
-  height: 300px;
+  height: auto;
   flex: 1;
 }
 
