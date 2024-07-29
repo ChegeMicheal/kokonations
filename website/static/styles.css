@@ -376,6 +376,7 @@ header .menu-toggle{
 }
 
 .footer .footer-content .about .socials a{
+  background: white;
   width: 45px;
   height: 40px;
   padding-top: 5px;
