@@ -187,6 +187,8 @@ def view_messages():
             )
         
         mycursor = mydb.cursor()
+        mycursor.execute("DELETE FROM footer_message WHERE id=6")
+        mysql.connector.connect.commit()
 
         mycursor.execute("SELECT * FROM footer_message WHERE visibility='public'") 
         DBData = mycursor.fetchall() 
