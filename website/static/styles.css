@@ -325,7 +325,7 @@ header .menu-toggle{
 /* footer */
 .footer{
   background: #000080;
-  color: black;
+  color: white;
   height: 400px;
   position: relative;
   width: 100%;
@@ -334,7 +334,7 @@ header .menu-toggle{
 .footer .footer-bottom{
   border-top: .7px solid black;
   background: #000080;
-  color: black;
+  color: white;
   height: auto;
   font-size: .8em;
   text-align: center;
