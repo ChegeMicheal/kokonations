@@ -198,6 +198,7 @@ def view_messages():
     return render_template("messages.html", footer_message=DBData)
 
 @auth.route('/view_private_messages', methods=['GET', 'POST'])
+@login_required
 def view_private_messages():
     
     def getData():
@@ -210,10 +211,11 @@ def view_private_messages():
         
         mycursor = mydb.cursor()
 
-        mycursor.execute("SELECT * FROM footer_message WHERE visibility='private'") 
-        DBData = mycursor.fetchall() 
-        print(DBData)
-        mycursor.close()
+        if User.id == 1:
+            mycursor.execute("SELECT * FROM footer_message WHERE visibility='private'") 
+            DBData = mycursor.fetchall() 
+            print(DBData)
+            mycursor.close()
         return DBData
          
     DBData = getData()
