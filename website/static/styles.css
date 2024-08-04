@@ -426,6 +426,7 @@ header .menu-toggle{
 
 .footer .footer-content .contact-form .contact-btn{
 /* float: right; */
+  width: 120px;
   font-size: 1.1em;
   font-family: 'lora';
   background: white;
