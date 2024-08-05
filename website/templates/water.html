@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block title %}
+<title>Koko Water</title>
+{% endblock title %}
+
+{% block content %}
+
+<div class="services">
+
+  <h2 class="service-content">KOKO Water</h2>
+<p>...</p>
+
+  <div class="post">
+        <img src="{{ url_for('static' , filename='images/uploads/agriculture1.PNG') }}" alt="" class="slider-image">
+
+<div class="post-info">
+          <h4><a href="#">...</a></h4>
+          <p>...</p>
+
+        </div>
+      </div>
+
+      <div class="post">
+        <img src="{{ url_for('static' , filename='images/uploads/agriculture2.PNG') }}" alt="" class="slider-image">
+        <div class="post-info">
+          <h4><a href="#">...</a></h4>
+          <p>...</p>
+        </div>
+      </div>
+
+      <div class="post">
+        <img src="{{ url_for('static' , filename='images/uploads/agriculture3.PNG') }}" alt="" class="slider-image">
+
+ <div class="post-info">
+           <h4><a href="#">...</a></h4>
+          <p>...</p>
+        </div>
+      </div>
+
+<!--
+      <div class="post">
+        <img src="{{ url_for('static' , filename='images/uploads/cars4.PNG') }}" alt="" class="slider-image">
+        <div class="post-info">
+          <br>
+          <h4><a href="single.html">#details...</a></h4>
+          <br>
+          <i class="fas fa-user">Anonymous </i>
+          &nbsp;
+          <i class="fas fa-calender">may 31,2023</i>
+        </div>
+      </div>
+-->
+
+</div>
+
+{% endblock content %}
