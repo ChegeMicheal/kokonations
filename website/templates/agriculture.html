@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %}
+<title>Koko Farm</title>
+{% endblock title %}
+
+{% block content %}
+
+<div class="services">
+
+  <h2 class="service-content">KOKO FARM</h2>
+<p>Koko Farm provides high-quality poultry, dairy products, and fresh produce. We are committed to sustainable farming practices and delivering nutritious and delicious products to our customers.</p>
+
+  <div class="post">
+        <img src="{{ url_for('static' , filename='images/uploads/agriculture1.PNG') }}" alt="" class="slider-image">
+        
+<div class="post-info">
+          <h4><a href="#">Fresh Poultry Products</a></h4>
+          <p>Our poultry farm offers a variety of fresh and high-quality poultry products, including farm-fresh eggs and tender chicken. We prioritize animal welfare and food safety, ensuring our products are both nutritious and delicious.</p>
+
+        </div>
+      </div>
+
+      <div class="post">
+        <img src="{{ url_for('static' , filename='images/uploads/agriculture2.PNG') }}" alt="" class="slider-image">
+        <div class="post-info">
+          <h4><a href="#">Pure Dairy Delights</a></h4>
+          <p>Indulge in our range of pure dairy products, featuring fresh milk, creamy yogurt, rich butter, and an assortment of cheeses. Made from healthy cows, our dairy products are crafted to bring natural goodness and exceptional taste to your table.</p>
+        </div>
+      </div>
+
+      <div class="post">
+        <img src="{{ url_for('static' , filename='images/uploads/agriculture3.PNG') }}" alt="" class="slider-image">
+       
+ <div class="post-info">
+           <h4><a href="#">Fresh Farm Produce</a></h4>
+          <p>Explore our selection of fresh farming produce, including a wide variety of fruits, vegetables, and herbs. Our products are grown with care, ensuring they are vibrant, flavorful, and full of nutrients, perfect for a healthy diet.</p>
+        </div>
+      </div>
+
+<!--
+      <div class="post">
+        <img src="{{ url_for('static' , filename='images/uploads/cars4.PNG') }}" alt="" class="slider-image">
+        <div class="post-info">
+          <br>
+          <h4><a href="single.html">#details...</a></h4>
+          <br>
+          <i class="fas fa-user">Anonymous </i>
+          &nbsp;
+          <i class="fas fa-calender">may 31,2023</i>
+        </div>
+      </div>
+-->
+
+</div>
+
+{% endblock content %}
+
