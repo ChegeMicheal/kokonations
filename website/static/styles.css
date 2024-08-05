@@ -258,7 +258,8 @@ header .menu-toggle{
 }
 .post-slider .post-wrapper .post{
   border: none;
-  height: 300px;
+  min-height: 300px;
+  height: auto;
   width: 300px;
   margin: 0px 10px;
   margin-bottom: 5px;
@@ -296,7 +297,8 @@ header .menu-toggle{
 }
 
 .services .post{
-  height: 400px;
+  min-height:400px;
+  height: auto;
   width: 400px;
   margin: 0px 5px;
   margin-bottom: 10px;
@@ -308,7 +310,7 @@ header .menu-toggle{
 }
 
 .services .post .post-info{
-  height: 100px;
+  height: auto;
   padding: 0px 5px ;
   overflow: hidden;
 }
@@ -622,7 +624,7 @@ header .menu-toggle{
 /* displaying various pictures */
 .services .post{
   border: none;
-  height: 400px;
+  height: auto;
   width: 90%;
   margin: 0px 10px;
   margin-bottom: 10px;
