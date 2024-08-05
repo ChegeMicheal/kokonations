@@ -251,7 +251,7 @@ header .menu-toggle{
 .post-slider .post-wrapper{
   text-align: center;
   width: 90%;
-  height: 315px;
+  height: auto;
   overflow: hidden;
   margin: 5px auto;
   padding: 10px;
