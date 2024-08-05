@@ -93,6 +93,16 @@ def home():
 def cars():
     return render_template('cars.html', user=current_user)
 
+@auth.route('/agriculture', methods=['GET', 'POST'])
+def agriculture():
+    return render_template('agriculture.html', user=current_user)
+
+
+@auth.route('/water', methods=['GET', 'POST'])
+def water():
+    return render_template('water.html', user=current_user)
+
+
 @auth.route('/realestate', methods=['GET', 'POST'])
 def realestate():
     return render_template('realestate.html', user=current_user)
