@@ -5,106 +5,140 @@
 {% endblock title %}
 
 {% block content %}
-  
+
 
 <!-- page wrapper -->
 <div class="page-wrapper">
-  
+
   <!-- carousel -->
   <div class="post-slider">
     <h3 class="slider-title one">latest</h3>
     <i class="fas fa-chevron-left prev"></i>
     <i class="fas fa-chevron-right next"></i>
-    
+
     <div class="post-wrapper">
-      
-       <div class="post">
+
+      <div class="post">
         <img src="{{ url_for('static' , filename='images/uploads/architechture1.PNG') }}" alt="" class="slider-image">
         <div class="post-info">
-          <h4><a href="#">Innovative Office Buildings</a></h4>
-          <p>Our modern office buildings are designed with innovation and sustainability in mind. They feature flexible layouts, energy-efficient systems, and cutting-edge technology to enhance productivity and comfort.</p>
+          <br>
+          <h4>Innovative Office Buildings</h4>
+          <br><a href="/realestate" class="visit">visit <i class="fa-solid fa-square-arrow-up-right"></i></a><br>
         </div>
       </div>
-      
-       <div class="post">
+
+      <div class="post">
         <img src="{{ url_for('static' , filename='images/uploads/cars1.PNG') }}" alt="" class="slider-image">
         <div class="post-info">
-          <h4><a href="#">Sleek Electric Sedan</a></h4>
-          <p>Discover the future of driving with our sleek electric sedan. This vehicle offers cutting-edge technology, zero emissions, and a stylish design that turns heads wherever you go.</p>
-
+          <br>
+          <h4>Sleek Electric Sedan</h4>
+          <br><a href="/cars" class="visit">visit <i class="fa-solid fa-square-arrow-up-right"></i></a><br>
         </div>
       </div>
-      
+
       <div class="post">
         <img src="{{ url_for('static' , filename='images/uploads/real_estate1.PNG') }}" alt="" class="slider-image">
         <div class="post-info">
-
- <h4><a href="#">Modern Urban Skyscrapers</a></h4>
-<p>Explore our state-of-the-art urban skyscrapers designed for modern living. These high-rise buildings offer breathtaking views, premium amenities, and are located in the heart of the city.</p>
+          <br>
+          <h4>Modern Urban Skyscrapers</h4>
+          <br><a href="/realestate" class="visit">visit <i class="fa-solid fa-square-arrow-up-right"></i></a><br>
         </div>
       </div>
-      
-           <div class="post">
+
+      <div class="post">
+        <img src="{{ url_for('static' , filename='images/uploads/agriculture3.jpg') }}" alt="" class="slider-image">
+
+        <div class="post-info">
+          <br>
+          <h4><a href="#">Fresh Farm Produce</a></h4>
+          <br><a href="/agriculture" class="visit">visit <i class="fa-solid fa-square-arrow-up-right"></i></a><br>
+        </div>
+      </div>
+
+
+
+      <div class="post">
         <img src="{{ url_for('static' , filename='images/uploads/architechture2.PNG') }}" alt="" class="slider-image">
         <div class="post-info">
-          <h4><a href="#">Contemporary Residential Complexes</a></h4>
-          <p>Explore our contemporary residential complexes that combine style and functionality. These complexes offer a variety of living options, communal spaces, and are designed to foster a sense of community.</p>
+          <br>
+          <h4>Contemporary Residential Complexes</h4>
+          <br><a href="/realestate" class="visit">visit <i class="fa-solid fa-square-arrow-up-right"></i></a>
+          <br>
         </div>
       </div>
-      
-          <div class="post">
+
+      <div class="post">
         <img src="{{ url_for('static' , filename='images/uploads/cars2.PNG') }}" alt="" class="slider-image">
         <div class="post-info">
-          <h4><a href="#">High-performance Sports Car</a></h4>
-          <p>Experience the thrill of driving with our high-performance sports car. With its powerful engine, advanced features, and dynamic design, this car is built for speed and excitement.</p>
+          <br>
+          <h4>High-performance Sports Car</h4>
+          <br>
+          <a href="/cars" class="visit">visit <i class="fa-solid fa-square-arrow-up-right"></i></a>
+          <br>
         </div>
       </div>
+
+      <div class="post">
+        <img src="{{ url_for('static' , filename='images/uploads/agriculture1.jpg') }}" alt="" class="slider-image">
+
+        <div class="post-info">
+          <br>
+          <h4>Fresh Poultry Products</h4><br>
+          <a href="/agriculture" class="visit">visit <i class="fa-solid fa-square-arrow-up-right"></i></a>
+          <br>
+        </div>
+      </div>
+
+    </div>
   </div>
-  
 </div>
 
+
 <center>
-<br><br>
-<h2>OUR SERVICES</h2>
+  <br><br>
+  <h2>OUR SERVICES</h2>
 </center>
 
 <div class="content" id="services">
   <div class="content-section">
     <ul>
-   <li> <a href="/realestate">Luxury Apartments</a> </li>
-<p>Discover our exclusive range of luxury apartments in prime locations. Perfect for modern living with top-notch amenities and stunning views.</p>
+      <li> <a href="/realestate">Luxury Apartments</a> </li>
+      <p>Discover our exclusive range of luxury apartments in prime locations. Perfect for modern living with top-notch
+        amenities and stunning views.</p>
 
 
 
-    
-  </ul>  
+
+    </ul>
   </div>
 
   <div class="content-section">
     <h2> </h2>
     <ul>
-<!--
+      <!--
 <li><a href="#">Expert Education consultancy</a> </li>
 <p>Our educational consultancy services offer guidance and support for students and institutions to achieve academic excellence.</p>
 -->
-<li><a href="/architechture">Innovative Architechtural designs</a> </li>
-<p>Our architectural services provide innovative and sustainable design solutions that meet your unique needs and preferences.</p>
+      <li><a href="/architechture">Innovative Architechtural designs</a> </li>
+      <p>Our architectural services provide innovative and sustainable design solutions that meet your unique needs and
+        preferences.</p>
 
-  
-</ul>
 
-</div>
-  
+    </ul>
+
+  </div>
+
 
   <div class="content-section">
     <h2> </h2>
     <ul>
       <li><a href="/cars">Premium Car sales</a> </li>
-      <p>Explore our wide selection of premium cars, offering the latest models with excellent performance and reliability.</p>
- 
-      
- 
-<!--
+      <p>Explore our wide selection of premium cars, offering the latest models with excellent performance and
+        reliability.</p>
+
+
+
+      <!--
 
 <li><a href="#">Secure Money Exchange</a></li>
 <p>Our money exchange services offer competitive rates and secure transactions for all your currency conversion needs.</p>
@@ -114,53 +148,55 @@
 
 -->
 
-</ul>
+    </ul>
 
-  </div>  
+  </div>
 </div>
 
 <div class="content">
-<div class="content-section">
+  <div class="content-section">
     <h2> </h2>
     <ul>
-<!--
+      <!--
 <li><a href="#">Expert Education consultancy</a> </li>
 <p>Our educational consultancy services offer guidance and support for students and institutions to achieve academic excellence.</p>
 -->
-<li><a href="#">Property Trading</a></li>
-<p>We facilitate smooth and transparent buying and selling of properties, ensuring you get the best deals in the market.</p>
+      <li><a href="#">Property Trading</a></li>
+      <p>We facilitate smooth and transparent buying and selling of properties, ensuring you get the best deals in the
+        market.</p>
 
-  
+
     </ul>
-  
+
   </div>
 
 
- <div class="content-section">
+  <div class="content-section">
     <h2> </h2>
     <ul>
-<li><a href="/agriculture">Koko Farm</a></li>
+      <li><a href="/agriculture">Koko Farm</a></li>
 
-<p>Koko Farm provides high-quality poultry, dairy products, and fresh produce. We are committed to sustainable farming practices and delivering nutritious and delicious products to our customers.</p>
+      <p>Koko Farm provides high-quality poultry, dairy products, and fresh produce. We are committed to sustainable
+        farming practices and delivering nutritious and delicious products to our customers.</p>
 
-  
+
     </ul>
-  
+
   </div>
 
-<div class="content-section">
+  <div class="content-section">
     <h2> </h2>
     <ul>
-<!--
+      <!--
 <li><a href="#">Expert Education consultancy</a> </li>
 <p>Our educational consultancy services offer guidance and support for students and institutions to achieve academic excellence.</p>
 -->
-<li><a href="#">Koko water</a></li>
-<p> __...__</p>
+      <li><a href="#">Koko water</a></li>
+      <p> __...__</p>
 
-  
+
     </ul>
-  
+
   </div>
 
 </div>

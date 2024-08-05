@@ -276,6 +276,21 @@ header .menu-toggle{
   overflow: hidden;
 }
 
+.post-slider .post-wrapper .post .post-info .visit{
+  background: blue;
+  color: white;
+  width: auto;
+  padding: 2px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.post-slider .post-wrapper .post .post-info .visit:hover{
+  background:white;
+  color: blue;
+}
 .post-slider .post-wrapper .post .slider-image{
   width: 100%;
   height: 200px;
