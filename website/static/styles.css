@@ -280,11 +280,12 @@ header .menu-toggle{
   background: blue;
   color: white;
   width: auto;
-  padding: 2px;
-  font-size: 1.2em;
-  border-radius: 5px;
-  margin-bottom: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 1.3em;
+  border-radius: 10px;
   text-decoration: none;
+  margin: 5px;
 }
 
 .post-slider .post-wrapper .post .post-info .visit:hover{
