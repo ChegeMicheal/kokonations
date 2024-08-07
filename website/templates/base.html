@@ -4,27 +4,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- font Awesome -->
-  
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://path/to/font-awesome/css/font-awesome.min.css">
 
-<!-- slick carousel -->
-<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-<!-- // Add the new slick-theme.css if you want the default styling -->
-<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-  
+  <!-- font Awesome -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://path/to/font-awesome/css/font-awesome.min.css">
+
+  <!-- slick carousel -->
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <!-- // Add the new slick-theme.css if you want the default styling -->
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
-{% block links %}
+  {% block links %}
 
-{% endblock links %}
-  
+  {% endblock links %}
+
 
 
   <!-- custom styling -->
@@ -43,122 +44,128 @@
     </div>
     <i class="fa fa-bars menu-toggle"></i>
     <ul class="nav">
-      
-            <li class="Dropdown">
-        <a href="#services"><i class="fa fa-wrench" aria-hidden="true"></i> 
+
+      <li class="Dropdown">
+        <a href="#services"><i class="fa fa-wrench" aria-hidden="true"></i>
           Services
           <i class="fa fa-chevron-down" style="font-size: .8em;"></i>
-          </a>
-              <ul class="dropdown">
-                
-<li><a href="/cars"class="dshboard"><i class="fa-solid fa-car"></i> Koko Car</a></li>
+        </a>
+        <ul class="dropdown">
 
-<li><a href="/agriculture" class="dshboard"><i class="fa-solid fa-tractor"></i> Koko Farm</a></li> 
+          <li><a href="/cars" class="dshboard"><i class="fa-solid fa-car"></i> Koko Car</a></li>
 
-<li><a href="/realestate" class="dshboard"><i class="fa-solid fa-city"></i> Koko House</a></li> 
+          <li><a href="/agriculture" class="dshboard"><i class="fa-solid fa-tractor"></i> Koko Farm</a></li>
 
-<li><a href="/water" class="dshboard"><i class="fa-solid fa-bottle-water"></i> Koko Water</a></li> 
+          <li><a href="/realestate" class="dshboard"><i class="fa-solid fa-city"></i> Koko House</a></li>
 
-<!--
+          <li><a href="/water" class="dshboard"><i class="fa-solid fa-bottle-water"></i> Koko Water</a></li>
+
+          <!--
                 <li><a href="/architechture" class="dshboard">koko architechture</a></li>
                 <li><a href="#"class="dshboard">education consultancy</a></li>
                 <li><a href="/details"class="dshboard">details</a></li>
                 <li><a href="/upload_image"class="dshboard">upload image</a></li> 
 -->
 
-                <li><a href="/view_messages"class="dshboard"><i class="fa-solid fa-message"></i> Messages</a></li>
+          <li><a href="/view_messages" class="dshboard"><i class="fa-solid fa-message"></i> Messages</a></li>
 
         </ul>
       </li>
-      <li><a href="/homepage"><i class="fa-solid fa-house"></i> Home</a></li>  
+      <li><a href="/homepage"><i class="fa-solid fa-house"></i> Home</a></li>
     </ul>
 
   </header>
-  
-
-{% block content %}
 
 
-{% endblock content %}
+  {% block content %}
 
-<!-- footer -->
-<div class="footer">
-  
-  <div class="footer-content">
-    <div class="footer-section about">
-      <h3 class="logo-text"><span>KOKO</span> NATION</h3> <h4>GROUP OF COMPANIES</h4><br>
-      <p>At Koko Nation, we specialize in providing services to the taste of you, our customers.</p>
-      <div class="contact">
-        <span><i class="fas fa-phone"></i>&nbsp;  +905488250928 | +234905703668</span>
-        <span><i class="fas fa-envelope"></i>&nbsp; <a href="mailto:kokonation4all@gmail.com">kokonation4all@gmail.com</a></span>
+
+  {% endblock content %}
+
+  <!-- footer -->
+  <div class="footer">
+
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h3 class="logo-text"><span>KOKO</span> NATION</h3>
+        <h4>GROUP OF COMPANIES</h4><br>
+        <p>At Koko Nation, we specialize in providing services to the taste of you, our customers.</p>
+        <div class="contact">
+          <span><i class="fas fa-phone"></i>&nbsp; +905488250928 | +234905703668</span>
+          <span><i class="fas fa-envelope"></i>&nbsp; <a
+              href="mailto:kokonation4all@gmail.com">kokonation4all@gmail.com</a></span>
+        </div>
+
+        <div class="socials">
+          <br>
+          <a href="#"><i class="fab fa-facebook" style="color:blue"></i></a>
+          <a href="#"><i class="fab fa-instagram" style="color:rgb(100, 41, 47)"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter" style="color:black;"></i></a>
+          <a href="#"><i class="fab fa-youtube" style="color:red;"></i></a>
+        </div>
       </div>
-      
-      <div class="socials">
-        <br>
-        <a href="#"><i class="fab fa-facebook" style="color:blue"></i></a>
-        <a href="#"><i class="fab fa-instagram" style="color:rgb(100, 41, 47)"></i></a>
-        <a href="#"><i class="fa-brands fa-x-twitter" style="color:black;"></i></a>   
-        <a href="#"><i class="fab fa-youtube" style="color:red;"></i></a>
+
+      <div class="footer-section links">
+        <h4>Quick links</h4> <br>
+        <ul class="links">
+          <li><a href="#">latest architectural designs</a></li>
+          <li><a href="#">latest cars</a></li>
+        </ul>
       </div>
-    </div>
 
-    <div class="footer-section links">
-      <h4>Quick links</h4> <br>
-      <ul class="links">
-        <li><a href="#">latest architectural designs</a></li>
-       <li><a href="#">latest cars</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-section contact-form">
-       <h4>Contact Us</h4><br>
-       <p>Get In Touch
+      <div class="footer-section contact-form">
+        <h4>Contact Us</h4><br>
+        <p>Get In Touch
         <form action="/send_messages" method="post">
-         <input type="email" name="email"   placeholder="...Email..." class="text-input contact-input" required>
-         <textarea name="message" cols="30" rows="5" placeholder="...Message..." class="text-input contact-input" required></textarea>
-         <br>
-         
-          <input type="radio" name="visibility" value="public" checked="checked"> <label for="visibility"> public &nbsp;&nbsp;&nbsp; </label>
-          <input type="radio" name="visibility" value="private" > <label for="visibility"> private </label><br> 
-       
+          <input type="email" name="email" placeholder="...Email..." class="text-input contact-input" required>
+          <textarea name="message" cols="30" rows="5" placeholder="...Message..." class="text-input contact-input"
+            required></textarea>
+          <br>
 
-        <input type="submit" value="Send" class="btn contact-btn"> 
+          <input type="radio" name="visibility" value="public" checked="checked"> <label for="visibility"> public
+            &nbsp;&nbsp;&nbsp; </label>
+          <input type="radio" name="visibility" value="private"> <label for="visibility"> private </label><br>
+
+
+          <input type="submit" value="Send" class="btn contact-btn">
           <i class="fas fa-envelope"></i>
-        
-       </form>
-               
+
+        </form>
+
+      </div>
     </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 koko nation. All rights reserved | designed by <a href="#">MRTech</a></p>
+    </div>
+
   </div>
-  
-<div class="footer-bottom">
-    <p>&copy; 2024 koko nation. All rights reserved | designed by <a href="#">MRTech</a></p>
-</div>
 
-</div>
+  <!-- J query -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-<!-- J query -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-<!-- slick carousel -->
-<script type="text/javascript"src="https://cdn.jsdelivr.net/npm/slick-carousel@1.0.1/slick/slick.min.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <!-- slick carousel -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.0.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="https://slick/slick.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 
-<!-- fontawesome script -->
+  <!-- fontawesome script -->
   <script src="https://kit.fontawesome.com/efaf4d94c3.js" crossorigin="anonymous"></script>
 
-<!-- bootstap script -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- bootstap script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
-<!-- custom script -->
-<script type="text/javascript" src="{{ url_for('static', filename = 'scripts.js') }}"></script>
+  <!-- custom script -->
+  <script type="text/javascript" src="{{ url_for('static', filename = 'scripts.js') }}"></script>
 
-{% block script%}
+  {% block script%}
 
-{% endblock script%}
+  {% endblock script%}
 
 
 </body>
