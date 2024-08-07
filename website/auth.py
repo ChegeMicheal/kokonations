@@ -208,7 +208,8 @@ def view_messages():
     return render_template("messages.html", footer_message=DBData)
 
 @auth.route('/view_private_messages', methods=['GET', 'POST'])
-def view_private_messages():
+@login_required 
+def private_messages():
     
     def getData():
         mydb = mysql.connector.connect(
