@@ -560,7 +560,9 @@ header .menu-toggle {
   background: none;
   font-size: 1.3em;
   margin: 5px;
+  margin-top: 0px;
   padding: 10px;
+  padding-top:0px;
   left: 30px;
   height: auto;
   flex: 1;
