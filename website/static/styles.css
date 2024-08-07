@@ -69,7 +69,7 @@ a {
 header {
   border-top: .7px solid black;
   border-bottom: .7px solid black;
-  background: none;
+  background: white;
   width: 100%;
   height: 50px;
   margin-top: 0px;
@@ -111,7 +111,7 @@ header ul li {
 }
 
 header ul li a {
-  background: none;
+  background: inherit;
   color: black;
   font-size: 1.2em;
 }
@@ -124,7 +124,7 @@ header ul li a:hover {
 }
 
 header ul li.dropdown {
-  background: none;
+  background: inherit;
   color: black;
 }
 
@@ -136,7 +136,7 @@ header ul li ul.dropdown {
   width: 200px;
   position: absolute;
   top: 40px;
-  background: none;
+  background: inherit;
   display: none;
   color: black;
 }
@@ -169,7 +169,7 @@ header ul li ul li ul.board {
   color: black;
   top: 40px;
   position: fixed;
-  background: none;
+  background: inherit;
   right: 0px;
   z-index: 20000;
   float: right;
@@ -588,7 +588,7 @@ header .menu-toggle {
   header ul {
     margin-top: -1px;
     width: 60%;
-    background: none;
+    background: inherit;
     max-height: 0px;
     overflow: hidden;
   }
@@ -611,7 +611,7 @@ header .menu-toggle {
   header ul li ul li a {
     padding: 10px;
     position: static;
-    background: none;
+    background: inherit;
     color: black;
     padding-left: 50px;
 
