@@ -7,7 +7,7 @@ body {
   height: 100%;
   padding: 0px;
   margin: 0px;
-  background: white;
+  background: none;
   font-family: 'lora', serif;
 }
 
@@ -69,7 +69,7 @@ a {
 header {
   border-top: .7px solid black;
   border-bottom: .7px solid black;
-  background: white;
+  background: none;
   width: 100%;
   height: 50px;
   margin-top: 0px;
@@ -111,7 +111,7 @@ header ul li {
 }
 
 header ul li a {
-  background: white;
+  background: none;
   color: black;
   font-size: 1.2em;
 }
@@ -136,7 +136,7 @@ header ul li ul.dropdown {
   width: 200px;
   position: absolute;
   top: 40px;
-  background: white;
+  background: none;
   display: none;
   color: black;
 }
@@ -169,7 +169,7 @@ header ul li ul li ul.board {
   color: black;
   top: 40px;
   position: fixed;
-  background: white;
+  background: none;
   right: 0px;
   z-index: 20000;
   float: right;
@@ -271,7 +271,7 @@ header .menu-toggle {
   margin: 0px 10px;
   margin-bottom: 5px;
   display: inline-block;
-  background: white;
+  background: none;
   border-radius: 5px;
   box-shadow: 1rem 1rem 1rem -1rem rgb(58, 58, 58);
   overflow: hidden;
@@ -327,7 +327,7 @@ header .menu-toggle {
   margin: 0px 5px;
   margin-bottom: 10px;
   display: inline-block;
-  background: white;
+  background: none;
   border-radius: 5px;
   box-shadow: 1rem 1rem 1rem -1rem burlywood;
   overflow: hidden;
@@ -557,7 +557,7 @@ header .menu-toggle {
 
 .content .content-section {
   border-top: .1px solid black;
-  background: white;
+  background: none;
   font-size: 1.3em;
   margin: 5px;
   padding: 10px;
@@ -588,7 +588,7 @@ header .menu-toggle {
   header ul {
     margin-top: -1px;
     width: 60%;
-    background: white;
+    background: none;
     max-height: 0px;
     overflow: hidden;
   }
@@ -611,7 +611,7 @@ header .menu-toggle {
   header ul li ul li a {
     padding: 10px;
     position: static;
-    background: white;
+    background: none;
     color: black;
     padding-left: 50px;
 
@@ -656,7 +656,7 @@ header .menu-toggle {
     margin: 0px 10px;
     margin-bottom: 10px;
     display: inline-block;
-    background: white;
+    background: none;
     border-radius: 5px;
     box-shadow: 1rem 1rem 1rem -1rem burlywood;
     overflow: hidden;
