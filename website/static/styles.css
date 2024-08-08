@@ -149,7 +149,7 @@ header ul li ul.dropdown {
   width: 200px;
   position: absolute;
   top: 43px;
-  margin-top: -1px;
+  margin-top: 1px;
   background: white;
   display: none;
   color: black;
@@ -367,7 +367,7 @@ header .menu-toggle {
 .footer {
   background: navy;
   color: white;
-  height: 270px;
+  height: 300px;
   position: relative;
   width: 100%;
 }
@@ -377,7 +377,7 @@ header .menu-toggle {
   background: navy;
   color: white;
   height: 30px;
-  font-size: auto;
+  font-size: .9em;
   text-align: center;
   position: absolute;
   bottom: 0px;
@@ -616,7 +616,8 @@ header .menu-toggle {
   }
 
   .showing {
-    margin-top: -6px;
+    top: 50px;
+    margin-top: 0px;
     height: auto;
     max-height: 100em;
   }
