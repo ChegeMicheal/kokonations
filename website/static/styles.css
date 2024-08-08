@@ -149,7 +149,6 @@ header ul li ul.dropdown {
   width: 200px;
   position: absolute;
   top: 43px;
-  margin-top: -1px;
   background: white;
   display: none;
   color: black;
@@ -619,7 +618,7 @@ header .menu-toggle {
   }
 
   .showing {
-    margin-top: -5px;
+    margin-top: -4px;
     height: auto;
     max-height: 100em;
   }

@@ -223,7 +223,6 @@ def private_messages():
 
         mycursor.execute("SELECT * FROM footer_message WHERE visibility='private'") 
         DBData = mycursor.fetchall() 
-        print(DBData)
         mycursor.close()
         return DBData
          
