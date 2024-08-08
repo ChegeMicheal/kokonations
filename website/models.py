@@ -15,7 +15,7 @@ class User(db.Model, UserMixin):
         return '<Name %r>' % self.name
     
 
-class Footer_message(db.Model):
+class Review(db.Model):
     id= db.Column(db.Integer, primary_key = True)
     email = db.Column(db.String(150), nullable=False)
     message = db.Column(db.String(10000), nullable=False)

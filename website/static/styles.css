@@ -71,7 +71,7 @@ header {
   border-bottom: .7px solid black;
   background: white;
   width: 100%;
-  height: 50px;
+  height: 45px;
   margin-top: 0px;
   position: fixed;
   z-index: 10000;
@@ -82,19 +82,32 @@ header * {
 }
 
 header .logo {
+  align-self: center;
+  top: 10%;
+  bottom: 10%;
+  height: 80%;
   float: left;
-  height: inherit;
-  margin-left: 2em;
+  height: auto;
+  display: flex;
+  margin-left: 5px;
 }
 
+header .logo-image {
+  float: left;
+  width: 50px;
+  height: 35px;
+  margin: 5px;
+}
+
+
 header .logo-text {
-  margin: 8px;
-  font-family: 'candal', serif;
+  margin: 4px;
+  font-family: lora;
 }
 
 header .logo-text span {
   font-family: 'Times New Roman', Times, serif;
-  color: #000080;
+  color: navy;
 }
 
 header ul {
@@ -111,7 +124,7 @@ header ul li {
 }
 
 header ul li a {
-  background: inherit;
+  background: white;
   color: black;
   font-size: 1.2em;
 }
@@ -124,7 +137,7 @@ header ul li a:hover {
 }
 
 header ul li.dropdown {
-  background: inherit;
+  background: white;
   color: black;
 }
 
@@ -135,8 +148,9 @@ header ul li.Dropdown:hover ul.dropdown {
 header ul li ul.dropdown {
   width: 200px;
   position: absolute;
-  top: 40px;
-  background: inherit;
+  top: 43px;
+  margin-top: -1px;
+  background: white;
   display: none;
   color: black;
 }
@@ -167,9 +181,9 @@ header ul li ul li a:hover {
 
 header ul li ul li ul.board {
   color: black;
-  top: 40px;
+  top: 43px;
   position: fixed;
-  background: inherit;
+  background: white;
   right: 0px;
   z-index: 20000;
   float: right;
@@ -194,6 +208,7 @@ header ul li a {
 
 
 header .menu-toggle {
+  color: navy;
   display: none;
 }
 
@@ -231,7 +246,7 @@ header .menu-toggle {
 }
 
 .post-slider .one {
-  margin-top: 60px;
+  margin-top: 50px;
 }
 
 .post-slider .next {
@@ -284,7 +299,7 @@ header .menu-toggle {
 }
 
 .post-slider .post-wrapper .post .post-info .visit {
-  background: blue;
+  background: navy;
   color: white;
   width: auto;
   padding-right: 10px;
@@ -297,7 +312,7 @@ header .menu-toggle {
 
 .post-slider .post-wrapper .post .post-info .visit:hover {
   background: white;
-  color: blue;
+  color: navy;
 }
 
 .post-slider .post-wrapper .post .slider-image {
@@ -315,7 +330,7 @@ header .menu-toggle {
 }
 
 .services .service-content {
-  padding-top: 60px;
+  padding-top: 50px;
   padding-bottom: 10px;
   height: auto;
 }
@@ -350,24 +365,24 @@ header .menu-toggle {
 
 /* footer */
 .footer {
-  background: #000080;
+  background: navy;
   color: white;
-  height: 400px;
+  height: 270px;
   position: relative;
   width: 100%;
 }
 
 .footer .footer-bottom {
   border-top: .7px solid white;
-  background: #000080;
+  background: navy;
   color: white;
-  height: auto;
-  font-size: .8em;
+  height: 30px;
+  font-size: auto;
   text-align: center;
   position: absolute;
   bottom: 0px;
   left: 0px;
-  padding: 10px;
+  padding: 5px;
   width: 100%;
 }
 
@@ -378,8 +393,10 @@ header .menu-toggle {
 }
 
 .footer .footer-content .footer-section {
+  height: auto;
   border-top: .4px solid white;
-  padding-bottom: 5px;
+  flex: 1;
+  padding: 10px;
 }
 
 .footer .footer-content .footer-section .about {
@@ -388,7 +405,8 @@ header .menu-toggle {
 
 .footer .footer-content h1,
 .footer .footer-content h3,
-.footer .footer-content h4 {
+.footer .footer-content h4,
+.footer .footer-content h5 {
   color: white;
   font-weight: bold;
 }
@@ -416,6 +434,7 @@ header .menu-toggle {
 
 .footer .footer-content .about .socials a:hover {
   background: white;
+  width: 40px;
   transition: all .3s;
 }
 
@@ -439,12 +458,11 @@ header .menu-toggle {
   background: white;
   color: black;
   margin: 5px;
-  margin-bottom: 10px;
-  line-height: 2.0rem;
-  padding: .9rem 1.4rem;
+  line-height: 1em;
+  padding: .5rem 1rem;
   border-radius: 2px;
   border: .4px solid white;
-  width: 80%;
+  width: 95%;
 }
 
 .footer .footer-content .contact-form .contact-input:focus {
@@ -454,24 +472,22 @@ header .menu-toggle {
 
 .footer .footer-content .contact-form .contact-btn {
   /* float: right; */
-  width: 120px;
-  font-size: 1.1em;
+  width: 80%;
+  align-self: center;
+  font-size: 1em;
+  line-height: 1em;
+  font-weight: bold;
   font-family: 'lora';
   background: white;
   color: black;
   border: none;
   border-radius: 50px;
-  margin-left: 50px;
+  margin-left: 10%;
 }
 
 .footer .footer-content .contact-form .contact-btn:hover {
   background: black;
   color: white;
-}
-
-.footer .footer-content .footer-section {
-  flex: 1;
-  padding: 10px;
 }
 
 .login {
@@ -540,29 +556,33 @@ header .menu-toggle {
   color: white;
 }
 
+.services-head{
+  align-self: center;
+  text-align: center;
+  margin-bottom: -20px;
+
+}
 
 .content {
   position: relative;
   display: flex;
-  padding: 10px;
-  margin-top: 10px;
+  padding: 0px;
 }
 
 .content ul li {
   font-weight: bold;
-  padding: 5px;
   list-style-type: square;
   text-decoration: none;
 }
 
 .content .content-section {
-  border-top: .1px solid black;
+  
   background: none;
   font-size: 1.3em;
   margin: 5px;
   margin-top: 0px;
-  padding: 10px;
-  padding-top:0px;
+  padding: 5px;
+  padding-top: 0px;
   left: 30px;
   height: auto;
   flex: 1;
@@ -588,15 +608,16 @@ header .menu-toggle {
 /* media queries */
 @media only screen and (max-width: 750px) {
   header ul {
-    margin-top: -1px;
-    width: 60%;
+    margin-top: 0px;
+    width: 50%;
     background: inherit;
     max-height: 0px;
     overflow: hidden;
   }
 
   .showing {
-    top: 50px;
+    margin-top: -6px;
+    height: auto;
     max-height: 100em;
   }
 
@@ -685,11 +706,7 @@ header .menu-toggle {
   }
 
   .footer .footer-content .contact-form {
-    padding-bottom: 70px;
-  }
-
-  .footer .footer-content .contact-form .contact-btn {
-    width: 40%;
+    padding-bottom: 35px;
   }
 
   .content {

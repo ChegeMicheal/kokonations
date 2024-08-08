@@ -1,5 +1,5 @@
 from flask import Blueprint, Flask, render_template, request, flash, redirect, url_for
-from .models import Footer_message,User
+from .models import Review,User
 import os
 from werkzeug.utils import secure_filename
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -176,7 +176,7 @@ def send_messages():
         message = request.form.get('message')
         visibility = request.form.get('visibility')
         #add user to database
-        new_message = Footer_message(email = email, message=message, visibility=visibility)
+        new_message = Review(email = email, message=message, visibility=visibility)
         db.session.add(new_message)
         db.session.commit()
         flash('message submitted!', category='success')
@@ -198,14 +198,14 @@ def view_messages():
         
         mycursor = mydb.cursor()
 
-        mycursor.execute("SELECT * FROM footer_message WHERE visibility='public'") 
+        mycursor.execute("SELECT * FROM review WHERE visibility='public'") 
         DBData = mycursor.fetchall() 
         print(DBData)
         mycursor.close()
         return DBData
          
     DBData = getData()
-    return render_template("messages.html", footer_message=DBData)
+    return render_template("messages.html", review=DBData)
 
 @auth.route('/view_private_messages', methods=['GET', 'POST'])
 @login_required 

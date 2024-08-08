@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
   <!-- font Awesome -->
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -40,6 +44,7 @@
 <body>
   <header>
     <div class="logo">
+      <img src="{{ url_for('static' , filename='images/uploads/logo.PNG') }}" alt="" class="logo-image"><br>
       <h1 class="logo-text"><span>KOKO</span> NATION</h1>
     </div>
     <i class="fa fa-bars menu-toggle"></i>
@@ -89,7 +94,8 @@
     <div class="footer-content">
       <div class="footer-section about">
         <h3 class="logo-text"><span>KOKO</span> NATION</h3>
-        <h4>GROUP OF COMPANIES</h4><br>
+        <h5>&nbsp;&nbsp;GROUP OF COMPANIES</h5>
+        <br>
         <p>At Koko Nation, we specialize in providing services to the taste of you, our customers.</p>
         <div class="contact">
           <span><i class="fas fa-phone"></i>&nbsp; +905488250928 | +234905703668</span>
@@ -98,42 +104,47 @@
         </div>
 
         <div class="socials">
-          <br>
-          <a href="#"><i class="fab fa-facebook" style="color:blue"></i></a>
-          <a href="#"><i class="fab fa-instagram" style="color:rgb(100, 41, 47)"></i></a>
-          <a href="#"><i class="fa-brands fa-x-twitter" style="color:black;"></i></a>
-          <a href="#"><i class="fab fa-youtube" style="color:red;"></i></a>
+
+          <a href="https://www.facebook.com/home.homepage/"><i class="fab fa-facebook" style="color:blue"></i></a>
+          <a href="https://www.instagram.com/"><i class="fab fa-instagram" style="color:rgb(100, 41, 47)"></i></a>
+          <a href="https://x.com/home?lang=en"><i class="fa-brands fa-x-twitter" style="color:black;"></i></a>
+          <a href="https://www.youtube.com/"><i class="fab fa-youtube" style="color:red;"></i></a>
+          <a href="https://wa.me/234905703668"><i class="fa fa-whatsapp" style="color: green;"></i></a>
         </div>
       </div>
 
       <div class="footer-section links">
-        <h4>Quick links</h4> <br>
+        <h4>QUICK LINKS</h4> <br>
         <ul class="links">
-          <li><a href="#">latest architectural designs</a></li>
-          <li><a href="#">latest cars</a></li>
+          <li><a href="/realestate">latest architectural designs</a></li>
+          <li><a href="/cars">latest cars</a></li>
         </ul>
       </div>
 
-        <div class="footer-section contact-form">
-          <h4>UX REVIEW</h4><br>
-          <p>Share your experience using the site by filling the form below: </p>
-          <form action="/send_messages" method="post">
-            <input type="email" name="email" placeholder="...Email..." class="text-input contact-input" required>
-            <textarea name="message" cols="30" rows="5" placeholder="...Message..." class="text-input contact-input"
-              required></textarea>
-            <br>
+      <div class="footer-section contact-form">
+        <h4>UX REVIEW</h4>
+        <p>Share your experience using the site by filling the form below: </p>
+        <form action="/send_messages" method="post">
+          <input type="email" name="email" placeholder="...Email..." class="text-input contact-input" required>
+          <textarea name="message" cols="30" rows="3" placeholder="...Review..." class="text-input contact-input"
+            required></textarea>
 
-            <input type="radio" name="visibility" value="public" checked="checked"> <label for="visibility"> public
-              &nbsp;&nbsp;&nbsp; </label>
+
+          <div style="text-align: center;">
+            visibility:&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="visibility" value="public" checked="checked"> <label for="visibility"> public </label>
+            &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <input type="radio" name="visibility" value="private"> <label for="visibility"> private </label><br>
+          </div>
 
 
-            <input type="submit" value="Send" class="btn contact-btn">
-            <i class="fas fa-envelope"></i>
 
-          </form>
+          <input type="submit" value="Send" class="btn contact-btn">
+          
 
-        </div>
+        </form>
+
+      </div>
     </div>
 
     <div class="footer-bottom">
