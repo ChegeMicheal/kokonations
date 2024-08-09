@@ -111,6 +111,7 @@ header .logo-text span {
 }
 
 header ul {
+  border-bottom-left-radius: 10px;
   float: right;
   margin: 0px;
   padding: 0px;
@@ -120,7 +121,7 @@ header ul {
 header ul li {
   float: left;
   position: relative;
-  border-top: .4px solid black;
+  
 }
 
 header ul li a {
@@ -146,10 +147,12 @@ header ul li.Dropdown:hover ul.dropdown {
 }
 
 header ul li ul.dropdown {
+  border-bottom-left-radius: 10px;
   width: 200px;
   position: absolute;
   top: 43px;
-  margin-top: 1px;
+  margin-top: -1px;
+  margin-left: -1px;
   background: white;
   display: none;
   color: black;
@@ -619,12 +622,13 @@ header .menu-toggle {
   }
 
   .showing {
-    margin-top: -4px;
+    margin-top: -6px;
     height: auto;
     max-height: 100em;
   }
 
   header ul li {
+    border-top: .4px solid black;
     width: 100%;
   }
 
@@ -710,8 +714,9 @@ header .menu-toggle {
 
   .footer .footer-content .contact-form {
     padding-bottom: 35px;
+    margin-bottom: 0px;
   }
-
+  
   .content {
     width: 100%;
     flex-direction: column;
