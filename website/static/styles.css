@@ -402,6 +402,11 @@ header .menu-toggle {
   padding: 10px;
 }
 
+.footer .footer-content .footer-section .logo {
+  display: flex;
+}
+
+
 .footer .footer-content .footer-section .about {
   float: left;
 }
