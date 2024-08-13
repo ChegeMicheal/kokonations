@@ -50,6 +50,7 @@
     <i class="fa fa-bars menu-toggle"></i>
     <ul class="nav">
 
+
       <li class="Dropdown">
         <a href="#services"><i class="fa fa-wrench" aria-hidden="true"></i>
           Services
@@ -78,6 +79,29 @@
         </ul>
       </li>
       <li><a href="/homepage"><i class="fa-solid fa-house"></i> Home</a></li>
+
+      <li>
+        <!--
+        <div>
+          <input type="checkbox" class="checkbox" id="checkbox">
+          <label for="checkbox" class="label">
+            &nbsp;
+            <i class="fas fa-moon"></i>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+          </label>
+        </div>
+      -->
+        <div class="select">
+          <i class="fa-solid fa-palette"></i>&nbsp;
+          <select class="select-input" id="selTheme">
+            <option value="auto">auto</option>
+            <option value="light">light</option>
+            <option value="dark">dark</option>
+          </select>
+        </div>
+      </li>
     </ul>
 
   </header>
@@ -93,13 +117,13 @@
 
     <div class="footer-content">
       <div class="footer-section about">
-<div class="logo" >
-      <img src="{{ url_for('static' , filename='images/uploads/logo.PNG') }}" alt="" class="logo-image"><br>
-<div>
-        <h3 class="logo-text"><span>KOKO</span> NATION</h3>
-        <h5>&nbsp;&nbsp;GROUP OF COMPANIES</h5>
-</div>
-</div>
+        <div class="logo">
+          <img src="{{ url_for('static' , filename='images/uploads/logo.PNG') }}" alt="" class="logo-image"><br>
+          <div>
+            <h3 class="logo-text"><span>KOKO</span> NATION</h3>
+            <h5>&nbsp;&nbsp;GROUP OF COMPANIES</h5>
+          </div>
+        </div>
         <br>
         <p>At Koko Nation, we specialize in providing services to the taste of you, our customers.</p>
         <div class="contact">
@@ -137,13 +161,14 @@
 
           <div>
             visibility:&nbsp;&nbsp;&nbsp;
-            <input type="radio" name="visibility" value="public" checked="checked"> <label for="visibility"> public </label>
+            <input type="radio" name="visibility" value="public" checked="checked"> <label for="visibility"> public
+            </label>
             &nbsp;&nbsp; &nbsp;&nbsp;
             <input type="radio" name="visibility" value="private"> <label for="visibility"> private </label><br>
           </div>
 
           <input type="submit" value="Send" class="btn contact-btn">
-          
+
 
         </form>
 

@@ -1,3 +1,11 @@
+:root{
+  --light-background-color: #fff;
+  --dark-background-color: #292c35;
+  --footer-background-color: navy;
+}
+
+
+
 * {
   box-sizing: border-box;
 }
@@ -7,8 +15,75 @@ body {
   height: 100%;
   padding: 0px;
   margin: 0px;
-  background: none;
   font-family: 'lora', serif;
+}
+
+.label{
+  margin: 12px;
+  margin-right: 20px;
+  width: 50px;
+  position: relative;
+  height: 20px;
+  display: flex;
+  background-color: var(--dark-background-color);
+  border-radius: 50px;
+  align-items: center;
+  transform: scale(1.5);
+}
+
+.fa-moon{
+  color: #f1c40f;
+}
+
+.fa-sun{
+  color: #f39c12;
+}
+
+.ball{
+  width: 20px;
+  height: 20px;
+  background-color: gray;
+  position: absolute;
+  top: 0px;
+  left: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox{
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox:checked + .label .ball{
+  transform: translateX(24px);
+}
+
+header.dark{
+  background-color: var(--dark-background-color);
+  color: white;
+}
+
+body.theme-dark{
+  background-color: var(--dark-background-color);
+  color: #fff;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  transition: background-color 1s;
+  font-family: 'lora', serif;
+}
+
+@media(prefers-color-scheme: dark){
+  body.theme-auto{
+    background-color: var(--dark-background-color);
+    color: #fff;
+  }
+}
+
+.select{
+  margin: 10px;
+  font-size: 1.2em;
 }
 
 h1,
@@ -18,7 +93,6 @@ h4,
 h5,
 h6 {
   font-family: 'candal', serif;
-  color: black;
   margin: 0px;
 }
 
@@ -245,7 +319,6 @@ header .menu-toggle {
 .post-slider .slider-title {
   margin-top: 5px;
   text-align: center;
-  color: black;
 }
 
 .post-slider .one {
@@ -258,7 +331,6 @@ header .menu-toggle {
   top: 50%;
   right: 10px;
   font-size: 2em;
-  color: black;
   cursor: pointer;
 }
 
@@ -268,7 +340,6 @@ header .menu-toggle {
   left: 10px;
   margin: 5px;
   font-size: 2em;
-  color: black;
   cursor: pointer;
 }
 
@@ -291,7 +362,7 @@ header .menu-toggle {
   display: inline-block;
   background: none;
   border-radius: 5px;
-  box-shadow: 1rem 1rem 1rem -1rem rgb(58, 58, 58);
+  box-shadow: 1rem 1rem 1rem -1rem rgb(244, 218, 171);
   overflow: hidden;
 }
 
