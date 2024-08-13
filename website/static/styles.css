@@ -1,5 +1,6 @@
 :root{
   --light-background-color: #fff;
+  --light-text-color:black;
   --dark-background-color: #292c35;
   --footer-background-color: navy;
 }
@@ -12,7 +13,8 @@
 
 html,
 body {
-  height: 100%;
+  background-color: var(--light-background-color);
+  color: var(--light-text-color);
   padding: 0px;
   margin: 0px;
   font-family: 'lora', serif;
@@ -59,19 +61,10 @@ body {
   transform: translateX(24px);
 }
 
-header.dark{
-  background-color: var(--dark-background-color);
-  color: white;
-}
 
 body.theme-dark{
   background-color: var(--dark-background-color);
   color: #fff;
-  height: 100%;
-  padding: 0px;
-  margin: 0px;
-  transition: background-color 1s;
-  font-family: 'lora', serif;
 }
 
 @media(prefers-color-scheme: dark){
@@ -82,8 +75,15 @@ body.theme-dark{
 }
 
 .select{
+  background-color: inherit;
+  color: inherit;
   margin: 10px;
   font-size: 1.2em;
+}
+
+.select .select-input{
+  background-color: inherit;
+  color: inherit;
 }
 
 h1,
@@ -99,6 +99,7 @@ h6 {
 a {
   text-decoration: none;
   color: inherit;
+  background-color: inherit;
 }
 
 .btn-big {
@@ -141,18 +142,16 @@ a {
 }
 
 header {
+  font-family: 'lora';
   border-top: .7px solid black;
   border-bottom: .7px solid black;
-  background: white;
+  background-color: inherit;
+  color: inherit;
   width: 100%;
-  height: 45px;
+  height: 46px;
   margin-top: 0px;
   position: fixed;
   z-index: 10000;
-}
-
-header * {
-  color: black;
 }
 
 header .logo {
@@ -176,15 +175,12 @@ header .logo-image {
 
 header .logo-text {
   margin: 4px;
-  font-family: lora;
-}
-
-header .logo-text span {
-  font-family: 'Times New Roman', Times, serif;
-  color: navy;
+  font-family: 'lora';
 }
 
 header ul {
+  background-color: inherit;
+  color: inherit;
   border-bottom-left-radius: 10px;
   float: right;
   margin: 0px;
@@ -193,27 +189,23 @@ header ul {
 }
 
 header ul li {
+  background-color: inherit;
+  color: inherit;
   float: left;
   position: relative;
   
 }
 
 header ul li a {
-  background: white;
-  color: black;
+  height: auto;
   font-size: 1.2em;
 }
 
 header ul li a:hover {
   cursor: pointer;
   color: black;
-  background: sandybrown;
+  background: gray;
   transition: 0.4s ease-in-out;
-}
-
-header ul li.dropdown {
-  background: white;
-  color: black;
 }
 
 header ul li.Dropdown:hover ul.dropdown {
@@ -221,18 +213,20 @@ header ul li.Dropdown:hover ul.dropdown {
 }
 
 header ul li ul.dropdown {
+  background-color: inherit;
+  color: inherit;
   border-bottom-left-radius: 10px;
   width: 200px;
   position: absolute;
   top: 43px;
   margin-top: -.5px;
   margin-left: -1px;
-  background: white;
   display: none;
-  color: black;
 }
 
 header ul li ul li {
+  background-color: inherit;
+  color: inherit;
   border-top: .4px solid black;
   width: 100%;
 }
@@ -242,7 +236,6 @@ header ul li ul li a {
   width: 100%;
   float: left;
   padding: 10px;
-  color: black;
 }
 
 header ul li ul li a.logout {
@@ -257,10 +250,10 @@ header ul li ul li a:hover {
 }
 
 header ul li ul li ul.board {
-  color: black;
+  background-color: inherit;
+  color: inherit;
   top: 43px;
   position: fixed;
-  background: white;
   right: 0px;
   z-index: 20000;
   float: right;
@@ -285,7 +278,6 @@ header ul li a {
 
 
 header .menu-toggle {
-  color: navy;
   display: none;
 }
 
@@ -703,7 +695,7 @@ header .menu-toggle {
   }
 
   .showing {
-    margin-top: -5px;
+    margin-top: -3px;
     height: auto;
     max-height: 100em;
   }
@@ -722,8 +714,6 @@ header .menu-toggle {
   header ul li ul li a {
     padding: 10px;
     position: static;
-    background: inherit;
-    color: black;
     padding-left: 50px;
 
   }
