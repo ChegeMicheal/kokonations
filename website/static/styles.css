@@ -13,6 +13,8 @@
 
 html,
 body {
+  animation-timeline: scroll();
+  animation: fadeout 1s forwards;
   background-color: var(--light-background-color);
   color: var(--light-text-color);
   padding: 0px;
