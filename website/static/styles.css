@@ -145,8 +145,8 @@ a {
 
 header {
   font-family: 'lora';
-  border-top: .7px solid black;
-  border-bottom: .7px solid black;
+  border-top: .7px solid;
+  border-bottom: .7px solid;
   background-color: inherit;
   color: inherit;
   width: 100%;
@@ -229,7 +229,7 @@ header ul li ul.dropdown {
 header ul li ul li {
   background-color: inherit;
   color: inherit;
-  border-top: .4px solid black;
+  border-top: .4px solid;
   width: 100%;
 }
 
@@ -640,6 +640,7 @@ header .menu-toggle {
 .services-head{
   align-self: center;
   text-align: center;
+  justify-content: center;
   margin-bottom: -20px;
 
 }
@@ -657,8 +658,7 @@ header .menu-toggle {
 }
 
 .content .content-section {
-  
-  background: none;
+  background-color: inherit;
   font-size: 1.3em;
   margin: 5px;
   margin-top: 0px;
@@ -703,7 +703,7 @@ header .menu-toggle {
   }
 
   header ul li {
-    border-top: .4px solid black;
+    border-top: .4px solid;
     width: 100%;
   }
 
