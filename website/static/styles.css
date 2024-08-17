@@ -282,6 +282,10 @@ header .menu-toggle {
   display: none;
 }
 
+.navyIcon{
+   color:navy;
+}
+
 .dashboard .dashboard-content {
   display: flex;
 }
