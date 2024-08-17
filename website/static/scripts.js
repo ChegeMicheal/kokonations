@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 $(".toggleIcon").click(function(){
-   if($(this).attr("data-permission-value")=="false")
+   if($(this).attr("data-permission-value")=="true")
 {
     $(this)
         .attr("data-permission-value", "true")
