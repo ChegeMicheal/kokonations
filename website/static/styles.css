@@ -286,10 +286,10 @@ header .menu-toggle {
    color:navy;
 }
 
-i.disable {
+.disable {
   color:inherit;
 }
-i.enable {
+.enable {
   color:navy;
   background-color:#fff;
 }
