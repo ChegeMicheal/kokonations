@@ -67,16 +67,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-$(".toggleIcon").click(function(){
-   if($(this).attr("data-permission-value")=="true")
-{
-    $(this)
-        .attr("data-permission-value", "false")
-        .addClass("navyIcon"); 
-}else{
-    $(this)
-        .attr("data-permission-value", "true")
-        .removeClass("navyIcon");
-}
-
+$(document).ready(function(){
+ $(".toggleIcon").each(function(){
+  if ($(this).attr('data-permission-value')) {
+   var permisssion = $(this).data("permission-value");
+   if(permisssion) {
+    $(this).addClass("enable");
+   } else {
+    $(this).addClass("disable");
+   }
+  }
+ })
+ $(".toggleIcon").click(function(){
+  if ($(this).attr('data-permission-value')) {
+   var permisssion = $(this).data("permission-value");
+   if(permisssion) {
+    $(this).data("permission-value", false);
+    $(this).addClass("disable");
+    $(this).removeClass("enable");
+   } else {
+    $(this).data("permission-value", true);
+    $(this).removeClass("disable");
+    $(this).addClass("enable");
+   }
+  }
+ });
 });
