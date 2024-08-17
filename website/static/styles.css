@@ -286,10 +286,10 @@ header .menu-toggle {
    color:navy;
 }
 
-.disable {
+.redIcon {
   color:inherit;
 }
-.enable {
+.greenIcon {
   color:navy;
   background-color:#fff;
 }
