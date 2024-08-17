@@ -282,16 +282,12 @@ header .menu-toggle {
   display: none;
 }
 
-.navyIcon{
-   color:navy;
-}
 
 .redIcon {
   color:inherit;
 }
 .greenIcon {
   color:navy;
-  background-color:#fff;
 }
 
 .dashboard .dashboard-content {
