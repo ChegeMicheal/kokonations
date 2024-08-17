@@ -286,6 +286,14 @@ header .menu-toggle {
    color:navy;
 }
 
+i.disable {
+  color:inherit;
+}
+i.enable {
+  color:navy;
+  background-color:#fff;
+}
+
 .dashboard .dashboard-content {
   display: flex;
 }
