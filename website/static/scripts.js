@@ -68,14 +68,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 $(".toggleIcon").click(function(){
-   if($(this).attr("data-permission-value")=="true")
+   if($(this).attr("data-permission-value")=="false")
 {
     $(this)
-        .attr("data-permission-value", "false")
+        .attr("data-permission-value", "true")
         .addClass("navyIcon"); 
 }else{
     $(this)
-        .attr("data-permission-value", "true")
+        .attr("data-permission-value", "false")
         .removeClass("navyIcon");
 }
 
