@@ -750,7 +750,7 @@ header .menu-toggle {
     align-self: center;
     position: absolute;
     display: block;
-    left: auto;
+    margin-left: 10px;
     right: 20px;
     height: 50%;
     top: 25%;
