@@ -176,6 +176,7 @@ header .logo-image {
 
 header .logo-text {
   margin: 4px;
+  font-size: auto;
   font-family: 'lora';
 }
 
