@@ -175,6 +175,7 @@ header .logo-image {
 
 
 header .logo-text {
+  padding-right: 10px;
   margin: 4px;
   font-size: auto;
   font-family: 'lora';
@@ -759,6 +760,11 @@ header .menu-toggle {
 
   header .logo {
     margin-left: .5em;
+  }
+
+  header .logo-text{
+    font-size: auto;
+    padding-right: 10px;
   }
 
   /* displaying various pictures */
