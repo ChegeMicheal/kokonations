@@ -705,7 +705,7 @@ header .menu-toggle {
   }
 
   .showing {
-    margin-top: -3px;
+    margin-top: -1px;
     height: auto;
     max-height: 100em;
   }
