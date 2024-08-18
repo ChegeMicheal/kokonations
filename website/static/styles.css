@@ -749,6 +749,7 @@ header .menu-toggle {
     align-self: center;
     position: absolute;
     display: block;
+    left: auto;
     right: 20px;
     height: 50%;
     top: 25%;
