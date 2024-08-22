@@ -14,6 +14,7 @@ def create_app():
     #sqlite database
     #app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DB_NAME}'
 
+    #mysql
     #app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:MYSQLpassword24@localhost/user'
 
     #jawsDB
