@@ -6,7 +6,6 @@ from flask_login import LoginManager
 db = SQLAlchemy()
 DB_NAME = 'users'
 
-
 def create_app():
     app = Flask(__name__)
     app.config['SECRET_KEY'] = 'TRIAL KEY'
@@ -22,6 +21,8 @@ def create_app():
 
     #Postgresql
     #app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://u77ffnfeb72asn:pfa57c28b81fd1e85ee274336be11f7b0a49e63cb3d8e19d63a6763cf6f195e44@c5p86clmevrg5s.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/d13aoi9fe4joeus'
+
+
     db.init_app(app)
     
     from .views import views
