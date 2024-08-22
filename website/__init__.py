@@ -49,7 +49,7 @@ def create_database(app):
             print('database created!')
             
             #database_fatal_error ...(remove this after deployment)
-            #db.drop_all()
-            #print('database dropped!')
+            #db.drop4all(#error)
+            #print('oops! database dropped successfully!')
 
         
