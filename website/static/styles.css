@@ -366,7 +366,7 @@ header .menu-toggle {
   display: inline-block;
   background: none;
   border-radius: 5px;
-  box-shadow: 1rem 1rem 1rem -1rem rgb(244, 218, 171); 
+  box-shadow: .5rem .5rem .5rem -.5rem rgb(244, 218, 171); 
   filter:drop-shadow(1px 1px 1px rgb(244, 218, 171));
   overflow: hidden;
 }
